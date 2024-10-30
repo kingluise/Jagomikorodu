@@ -1,0 +1,273 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Video Background Styling */
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the screen */
+    z-index: -1; /* Places the video behind other content */
+    opacity: 0.7; /* Adjust transparency for better readability */
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 1; /* Ensures content is above the video */
+}
+
+/* Style for the selection dropdown */
+#infoTypeSelect {
+    font-size: 14px; /* Smaller font size */
+    padding: 4px 8px; /* Smaller padding for reduced height */
+    height: auto; /* Auto height based on font size and padding */
+    width: 50%; /* Adjust width as needed */
+    margin: 0 auto; /* Center align */
+    display: block;
+    background-color: transparent; /* Make background transparent */
+    color: #333; /* Set text color for better visibility */
+    border: 1px solid #333; /* Optional: Add a border for visibility */
+    outline: none; /* Remove default outline */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.footer .list-unstyled a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .list-unstyled a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+/* Social Media Icon Styling */
+.footer .fab {
+    margin-right: 0.5rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer .fab:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #1a1a1a;
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: transparent; /* Fully transparent background */
+    backdrop-filter: blur(5px); /* Optional: adds a blur effect */
+}
+
+/* Additional Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    margin-right: 20px; /* Adjusts the space to the right of the logo */
+    font-family: 'Lobster', cursive; /* Apply the attractive font */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #ffffff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-brand:hover {
+    color: #ffcc00; /* Change color on hover for interaction */
+}
+
+
+  .navbar-nav .nav-item {
+          margin-left: 50px; /* Adds space between the nav items */
+    }
+
+
+/* Button Styling */
+.btn-primary {
+    background-color: #6c63ff; /* Button background color */
+    border: none; /* Removes default border */
+}
+
+.btn-primary:hover {
+    background-color: #5a54e6; /* Darker shade on hover */
+}
+
+/* Opinion Box Styling */
+textarea {
+    resize: none; /* Prevents resizing */
+}
+
+/* Rounded Logo Styling */
+.rounded-circle {
+    border-radius: 50%; /* Makes the logo circular */
+}
+
+.welcome-container {
+    display: flex;               /* Enable flexbox layout */
+    flex-direction: column;      /* Align items vertically */
+    justify-content: center;     /* Center items vertically */
+    align-items: center;         /* Center items horizontally */
+    height: 70vh;              /* Full viewport height */
+    padding: 50px;              /* Add padding */
+   background-color: rgba(128, 128, 128, 0.3); /* Semi-transparent grey */
+    border-radius: 10px;        /* Optional: Rounded corners */
+    text-align: center;         /* Center align text */
+}
+
+.welcome-title {
+    font-size: 22px; /* Set the title size */
+    margin-bottom: 15px; /* Add space below the title */
+    color: #ffffff; /* Grey color for the title */
+}
+
+.welcome-text {
+    font-size: 16px; /* Set the text size */
+    font-weight: bold; /* Makes only this specific paragraph bold */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 10px; /* Add space between paragraphs */
+    color: #ffffff; /* White color for the text */
+
+}
+
+/* Additional Responsive Design */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjusts font size for smaller screens */
+    }
+
+    .form-container {
+        padding: 20px; /* Reduces padding on smaller screens */
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 576px) {
+    .form-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+        max-width: 100%; /* Allow full width on small screens */
+    }
+
+    .navbar-brand, h2 {
+        font-size: 1.2rem; /* Adjust font size for better readability */
+    }
+
+    .logo-container img {
+        width: 60px; /* Adjust logo size */
+        height: 60px;
+    }
+
+    .content {
+        padding: 10px; /* Reduce content padding for mobile */
+    }
+   }
+
+   @media (max-width: 768px) {
+       .footer .row {
+           flex-direction: column; /* Stack footer items vertically */
+           align-items: center; /* Center align items */
+       }
+
+       .footer h5 {
+           margin-top: 10px; /* Add spacing for headings */
+       }
+
+       .footer a {
+           text-align: center; /* Center align footer links */
+           margin: 5px 0; /* Add spacing between links */
+       }
+   }
+
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+       .welcome-container {
+           padding: 15px; /* Reduced padding for mobile */
+       }
+
+       .welcome-title {
+           font-size: 1.5em; /* Adjust font size for smaller screens */
+       }
+
+       .welcome-text {
+           font-size: 1em; /* Adjust font size for smaller screens */
+       }
+
+       .footer .row {
+           flex-direction: column; /* Stack footer items vertically */
+           align-items: center; /* Center align items */
+       }
+
+       .footer h5 {
+           margin-top: 10px; /* Add spacing for headings */
+       }
+
+       .footer a {
+           text-align: center; /* Center align footer links */
+           margin: 5px 0; /* Add spacing between links */
+       }
+   }
+   
+   @media (max-width: 576px) {
+       .welcome-title {
+           font-size: 1.5em; /* Adjust font size for smaller screens */
+       }
+
+       .welcome-text {
+           font-size: 1em; /* Adjust font size for smaller screens */
+       }
+
+       .footer {
+           padding: 20px 10px; /* Add padding for smaller screens */
+       }
+
+       .footer-bottom {
+           padding: 10px 0; /* Adjust padding for footer bottom */
+       }
+   }

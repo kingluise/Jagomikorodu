@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagom Ikorodu</title>
+    <link rel="icon" href="images/favico.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+
+</head>
+<body>
+
+  <video autoplay muted loop playsinline id="backgroundVideo">
+     <source src="Videos/worship.mp4" type="video/mp4">
+ </video>
+
+    <!-- Navbar Below the Logo -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
+      <div class="container text-center">
+          <img src="images/logo.jpg" width="50" height="50" class="rounded-circle" alt="Church Logo">
+          <a class="navbar-brand text-white mx-2" href="#">Jesus Army Global Outreach Ministries</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Programs
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="programsDropdown">
+                          <a class="dropdown-item" href="#">Church Programs</a>
+                          <a class="dropdown-item" href="#">Special Program</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="departmentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Departments
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                          <a class="dropdown-item" href="#">Choir Department</a>
+                          <a class="dropdown-item" href="#">Ushering Department</a>
+                          <a class="dropdown-item" href="#">Foundation of Faith Department</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="connectDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Connect
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="connectDropdown">
+                          <a class="dropdown-item" href="#">Prayer Requests</a>
+                          <a class="dropdown-item" href="#">Contact Us</a>
+                          <a class="dropdown-item" href="#">Social Media</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+     <div class="container">
+         <div class="welcome-container">
+             <h2 class="welcome-title">Welcome to Jesus Army Global Outreach Ministry, Ikorodu.</h2>
+             <p class="welcome-text">We're excited to have you. This platform supports your spiritual growth by providing easy access to important updates and resources.
+
+                    Please ensure your information is current for effective communication and record-keeping, enhancing our shared experience..</p>
+             <p class="welcome-text">Please select your type below:</p>
+
+             <!-- Selection dropdown for adult or children -->
+             <select id="infoTypeSelect" class="form-control mb-4">
+                 <option value="">Choose an Option</option>
+                 <option value="adult">Adult</option>
+                 <option value="children">Children</option>
+             </select>
+         </div>
+     </div>
+
+
+            <!-- Welcome message for Adult -->
+            <div id="adultWelcome" class="text-center" style="display: none;">
+      <h3>Welcome to the Adult Member Registration!</h3>
+      <button onclick="window.location.href='https://surveyheart.com/form/6721e8f73a4c660682537392'" class="btn btn-primary mt-3">Proceed</button>
+  </div>
+           <!-- Welcome message for Children -->
+           <div id="childrenWelcome" class="text-center" style="display: none;">
+               <h3>Welcome to the Children Member Registration!</h3>
+               <button onclick="window.location.href='https://surveyheart.com/form/6721ecc43a4c66068253a6e9'" class="btn btn-primary mt-3">Proceed</button>
+           </div>
+       </div>
+
+       <!-- Footer -->
+<footer class="footer mt-5 py-4" style="background-color: #2d2d2d; color: #ffffff;">
+    <div class="container text-center text-md-left">
+        <div class="row">
+
+            <!-- Church Logo and Description -->
+            <div class="col-md-4 mb-4">
+                <img src="images/favico.png" alt="Church Logo" width="50" height="50" class="mb-3">
+                <p>Jesus Army Global Outreach Ministries - Building Faith, Building Families, Building Lives.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: #ffffff; text-decoration: none;">Home</a></li>
+                    <li><a href="#" style="color: #ffffff; text-decoration: none;">Programs</a></li>
+                    <li><a href="#" style="color: #ffffff; text-decoration: none;">Departments</a></li>
+                    <li><a href="#" style="color: #ffffff; text-decoration: none;">Connect</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Connect with Us</h5>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x mx-2" style="color: #4267B2;">facebook</i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x mx-2" style="color: #1DA1F2;">twitter</i></a>
+                <a href="https://zoom.us" target="_blank"><i class="fab fa-video fa-2x mx-2" style="color: #E1306C;">Zoom</i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x mx-2" style="color: #FF0000;">youtube</i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom py-3" style="background-color: #1a1a1a;">
+        <p class="mb-0 text-center">© 2024 Jesus Army Global Outreach Ministries. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
